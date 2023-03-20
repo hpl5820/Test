@@ -6,7 +6,7 @@ export default function Demo() {
   useEffect(() => {console.log(like)},[like]);
 
   const handleClick = () => {
-    setLike(like + 1);
+    setLike(like + 2);
   };
 
   const getLikeValue = () => {
