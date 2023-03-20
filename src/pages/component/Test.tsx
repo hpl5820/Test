@@ -6,7 +6,7 @@ export default function Demo() {
   useEffect(() => {console.log(like)},[like]);
 
   const handleClick = () => {
-    setLike(like + 2);
+    setLike(like + 1);
   };
 
   const getLikeValue = () => {
@@ -14,7 +14,7 @@ export default function Demo() {
       alert(like);
     }, 2000);
   };
-
+//加点东西
   return (
     <div>
       <button onClick={handleClick}>+</button>
