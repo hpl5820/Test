@@ -1,21 +1,25 @@
-import React from 'react'
-import './Test.less'
+import React, { useState, useEffect } from 'react';
 
+export default function Demo() {
+  const [like, setLike] = useState(0);
 
-export default function Test() {
-   
-  let person = {
-    name : '我想藏在罐头里',
-    age : 20
-}
-let person2 = person;
-console.log(person); 
-console.log(person2)
-    console.log("-----------分割线--------------")
-    
-    
+  useEffect(() => {console.log(like)},[like]);
+
+  const handleClick = () => {
+    setLike(like + 1);
+  };
+
+  const getLikeValue = () => {
+    setTimeout(() => {
+      alert(like);
+    }, 1000);
+  };
 
   return (
-    <div ></div>
-  )
+    <div>
+      <button onClick={handleClick}>+</button>
+      <button>{like} 👍</button>
+      <button onClick={getLikeValue}>获得like值</button>
+    </div>
+  );
 }
