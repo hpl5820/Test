@@ -12,7 +12,7 @@ export default function Demo() {
   const getLikeValue = () => {
     setTimeout(() => {
       alert(like);
-    }, 1000);
+    }, 2000);
   };
 
   return (
