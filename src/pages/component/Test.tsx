@@ -12,9 +12,9 @@ export default function Demo() {
   const getLikeValue = () => {
     setTimeout(() => {
       alert(like);
-    }, 2000);
+    }, 1000);
   };
-//加点东西
+//加点东西kkk
   return (
     <div>
       <button onClick={handleClick}>+</button>
